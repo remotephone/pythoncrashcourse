@@ -5,13 +5,13 @@ favorite_languages = {
     'phil': 'python',
 }
 
-print("Sarah's favorite language is " + 
-favorite_languages['sarah'].title() +
-".")
+print("Sarah's favorite language is " +
+      favorite_languages['sarah'].title() +
+      ".")
 
-print("Sarah's favorite language is " + 
-favorite_languages['sarah'].title() +
-".")
+print("Sarah's favorite language is " +
+      favorite_languages['sarah'].title() +
+      ".")
 
 print("Trying it myself....")
 person = {
@@ -22,8 +22,8 @@ person = {
 }
 
 print("Meet " + person['first'].title() + " " + person['last'].title() +
-" who is " + str(person['age']) + " years old and lives in "
-+ person['city'].title() + ".")
+      " who is " + str(person['age']) + " years old and lives in " +
+       person['city'].title() + ".")
 
 nums = {
     'bob': '1',
@@ -42,6 +42,7 @@ defs = {
     'for loop': 'perform action on sequential list of item',
     'if': 'conditional statement',
 }
-print("These are some things I learned: \nlist:\t\t" + defs['list'] + 
-"\n" + "dictionary:\t" + defs['dictionary'] + "\ntuple:\t\t" + defs['tuple'] +
-"\nfor loop:\t" + defs['for loop'] + "\nif:\t\t" + defs['if'])
+
+print("These are some things I learned: \nlist:\t\t" + defs['list'] +
+      "\n" + "dictionary:\t" + defs['dictionary'] + "\ntuple:\t\t" + defs['tuple'] +
+      "\nfor loop:\t" + defs['for loop'] + "\nif:\t\t" + defs['if'])
