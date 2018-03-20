@@ -45,3 +45,22 @@ nums = {
 
 for k, v in nums.items():
     print(k.title() + "'s favorite numbers are " + str(v))
+
+
+
+cities = {
+    'milan': {
+        'country': 'italy',
+        'popu': 10,
+        'fact': 'fashion',
+        },
+    'berlin': {
+        'country': 'germany',
+        'popu': 12,
+        'fact': 'capitol',
+    }
+}
+
+for city, stuff in cities.items():
+    print(city.title() + " has " + str(stuff['popu']) + " people in it and is known\
+ for being the " + stuff['fact'] + "-capital of " + stuff['country'].title() + ".")
