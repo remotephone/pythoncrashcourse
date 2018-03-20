@@ -8,12 +8,35 @@ defs = {
     'if': 'conditional statement',
 }
 
-print("These are some things I learned: \nlist:\t\t" + defs['list'] +
-      "\n" + "dictionary:\t" + defs['dictionary'] + "\ntuple:\t\t" +
-      defs['tuple'] + "\nfor loop:\t" + defs['for loop'] +
-      "\nif:\t\t" + defs['if'])
 
 
 print("These are some things I learned: ")
 for k, v in defs.items():
     print(k + ": " + v)
+
+rivers = {
+    'nile': 'egypt',
+    'amazon': 'brazil',
+    'rhine': 'germany',
+}
+
+for k, v in rivers.items():
+    print("The " + k.title() + " runs through " + v.title() + ".")
+
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+
+people = ['jen', 'sarah', 'edward', 'kim', 'tim', 'jane', 'phil']
+
+for ppl in favorite_languages.keys():
+    if ppl in people:
+        print(ppl.title() + " took the poll.")
+        
+for nots in people:
+    if nots not in favorite_languages.keys():
+        print(ppl.title() + " needs to take the poll.")
