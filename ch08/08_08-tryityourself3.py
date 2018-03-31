@@ -60,4 +60,3 @@ while True:
     # Call the values ("artists") from the keys ("musician") from record. 
     print("The album " + record['musician'].title() + " was made by "\
           + record['record'].title() + ".")
-    
