@@ -2,10 +2,10 @@
 # These are all the same!!
 
 """
-import modpizza
+# import modpizza
 
-modpizza.make_pizza(16, 'pepperoni')
-modpizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+# modpizza.make_pizza(16, 'pepperoni')
+# modpizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 """
 
 """
