@@ -27,7 +27,8 @@ class Restaurant():
     def increment_number_served(self, more_served):
         self.number_served += more_served
 
-
+# This is a subclass of restaurant, it imports Restaurant and customizes it.
+# we can make a restaurant and have flavors. 
 class IceCreamStand(Restaurant):
     """Represents an Ice Cream Stand Restaurant."""
     def __init__(self, restaurant_name, cuisine_type):
@@ -38,11 +39,15 @@ class IceCreamStand(Restaurant):
     def flavor_list(self):
         print(self.flavors)
 
+# Call class with required arguements
 bobs = IceCreamStand('bob\'s', 'ice cream')
+# Listt flavors which we defined as defaults in the subclass.
 bobs.flavor_list() 
 
 
 
+# Primary class here .It has some arguments assigned to it at run time and login_attempts
+# at 0.
 class User():
     def __init__(self, first_name, last_name, zip, age):
         """ Create a user an accept f & l name, zip, age"""
@@ -52,18 +57,22 @@ class User():
         self.age = age
         self.login_attempts = 0
 
+# describe fucntion that stringifies and prints stuff. 
     def describe_user(self):
         print("You are " + self.first_name.title() + " " + self.last_name.title() +
                 " and you are " + str(self.age) + " years old and live in " + 
                 str(self.zip) + " zip code.")
 
+# Add to login attempts one by one. 
     def increment_login_attempts(self):
         self.login_attempts += 1
-    
+
+# reset login_attempts to 0.    
     def reset_login_attempts(self):
         self.login_attempts = 0
 
 
+# Subclass of User. All we do is call privileges class. 
 class Admin(User):
     """This is a special user with special rights."""
     def __init__(self, first_name, last_name, zip, age):
@@ -71,7 +80,7 @@ class Admin(User):
         super().__init__(first_name, last_name, zip, age)
         self.privs = Privileges()
 
-
+# we assign some privs to the default class. show_privs just prints them.
 class Privileges():
     """This is a special user with special rights."""
     def __init__(self):
