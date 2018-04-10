@@ -1,0 +1,5 @@
+In Python you can quickly search strings of text.
+In Python you can process text quickly.
+In Python you can create classes and modify them easily.
+In Python you can create functions to repeat work easily.
+In Python you can accept user input on the command line.

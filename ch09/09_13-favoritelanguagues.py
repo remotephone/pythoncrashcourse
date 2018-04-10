@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
-#favorite_languages = OrderedDict()
-favorite_languages = {}
+favorite_languages = OrderedDict()
+#favorite_languages = {}
 
 favorite_languages['jen'] = 'python'
 favorite_languages['sarah'] = 'c'

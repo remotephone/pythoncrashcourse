@@ -11,3 +11,5 @@ defs['if'] = 'conditional statement'
 
 for k, v in defs.items():
     print("A " + k + " is a " + v + ".")
+
+    
